@@ -46,3 +46,9 @@ On the completion of the AJAX call, display the:
 - **content size** of the response
 
 The student determines how this information looks/styled when it's displayed.
+
+
+## Related Reading/Documentaion
+
+- [List of HTTP Request Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+- [List of Common HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
