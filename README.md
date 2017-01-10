@@ -7,7 +7,6 @@ The goal of this exercise is to assist the student in understanding the request 
 1. Students must start assignment in class.
 2. Students will find URLs on the net to use for this exercise. Expirement with websites you use frequently.
 2. Visit https://nss-responsecodes.herokuapp.com/docs for additional endpoints to use for this assignment.
-3. Students 
 3. Implement the needed User Experience leveraging the following User Stories:
 
 ```
@@ -26,7 +25,7 @@ So that I can examine the response times, the size of the returned content.
 
 ### Part 1: Boilerpate and Setup
 
-Create an AngularJS (1.x).
+Create an AngularJS (1.x) app.
 
 
 ### Part 2: UI Implementation & AJAX
