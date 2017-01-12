@@ -10,10 +10,14 @@
 
     	switch($scope.method) {
     	case 'GET':
+    		var sendDate = (new Date()).getTime();
 		      requestService.get($scope.url).then((success) => {
 		        const response = new Response(success);
 		        $scope.responses.push(response);
 		        console.log('responses', $scope.responses);
+		        var receiveDate = (new Date()).getTime();
+        		var responseTimeMs = receiveDate - sendDate;
+        		console.log('response time: ', `${responseTimeMs} ms`);
 		      }, (error) => {
 		        debugger
 		        //do something else

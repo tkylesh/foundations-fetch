@@ -16,10 +16,10 @@
 <h3>Foundations-Fetch</h3>
 <input type="text" ng-model="url"/>
 <select name="select" ng-model="method">
-  <option value="GET">GET</option> 
-  <option value="POST" selected>POST</option>
-  <option value="OPTIONS">OPTIONS</option>
-  <option value="HEAD">HEAD</option>
+  <option ng-value="GET">GET</option> 
+  <option ng-value="POST" selected>POST</option>
+  <option ng-value="OPTIONS">OPTIONS</option>
+  <option ng-value="HEAD">HEAD</option>
 </select>
 </br>
 <button type="button" class="button-primary" ng-click="fetch()">FETCH</button>
