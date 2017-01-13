@@ -3,6 +3,7 @@
     $scope.responses = [];
     $scope.url = "https://nss-responsecodes.herokuapp.com/200";
     $scope.method = 'GET';
+    $scope.responseTimeMs = 0;
 
     $scope.fetch = () => {
     	console.log('url', $scope.url);
@@ -16,8 +17,8 @@
 		        $scope.responses.push(response);
 		        console.log('responses', $scope.responses);
 		        var receiveDate = (new Date()).getTime();
-        		var responseTimeMs = receiveDate - sendDate;
-        		console.log('response time: ', `${responseTimeMs} ms`);
+        		$scope.responseTimeMs = receiveDate - sendDate;
+        		console.log('response time: ', `${$scope.responseTimeMs} ms`);
 		      }, (error) => {
 		        debugger
 		        //do something else
@@ -30,8 +31,8 @@
 		        $scope.responses.push(response);
 		        console.log('responses', $scope.responses);
 		        var receiveDate = (new Date()).getTime();
-		        var responseTimeMs = receiveDate - sendDate;
-        		console.log('response time: ', `${responseTimeMs} ms`);
+		        $scope.responseTimeMs = receiveDate - sendDate;
+        		console.log('response time: ', `${$scope.responseTimeMs} ms`);
 		      }, (error) => {
 		        debugger
 		        //do something else
@@ -44,8 +45,8 @@
 		        $scope.responses.push(response);
 		        console.log('responses', $scope.responses);
 		        var receiveDate = (new Date()).getTime();
-		        var responseTimeMs = receiveDate - sendDate;
-        		console.log('response time: ', `${responseTimeMs} ms`);
+		        $scope.responseTimeMs = receiveDate - sendDate;
+        		console.log('response time: ', `${$scope.responseTimeMs} ms`);
 		      }, (error) => {
 		        debugger
 		        //do something else
@@ -58,8 +59,8 @@
 		        $scope.responses.push(response);
 		        console.log('responses', $scope.responses);
 		        var receiveDate = (new Date()).getTime();
-		        var responseTimeMs = receiveDate - sendDate;
-        		console.log('response time: ', `${responseTimeMs} ms`);
+		        $scope.responseTimeMs = receiveDate - sendDate;
+        		console.log('response time: ', `${$scope.responseTimeMs} ms`);
 		      }, (error) => {
 		        debugger
 		        //do something else
